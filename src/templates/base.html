@@ -1,0 +1,51 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+
+        <!--=============== CSS ===============--> 
+        <link rel="stylesheet" href=" {% static 'css/styles.css' %}">
+
+        <title>Shopping for Halloween???</title>
+        
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        {% include 'personal/header.html' %}
+        <!--==================== HEADER END ====================-->
+
+
+        <!--==================== HOME ====================-->
+        {% include 'personal/home.html' %}
+        <!--==================== HOME END ====================-->
+
+
+        <!--==================== FOOTER ====================-->
+        {% include 'personal/footer.html' %}
+        <!--==================== FOOTER END ====================-->
+            
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="{% static 'js/scrollreveal.min.js' %}"></script>
+
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
