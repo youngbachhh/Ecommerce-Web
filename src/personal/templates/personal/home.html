@@ -26,10 +26,13 @@
                             </p>
 
                             <div class="home__buttons">
-                                <a href="#" class="button">Book Now</a>
+                                <button href="#" class="button update-cart" data-product=13 data-action="add">Add to
+                                    Cart
+                                    now</button>
                                 <a href="#" class="button--link button--flex">Track Record <i
                                         class='bx bx-right-arrow-alt button__icon'></i></a>
                             </div>
+
                         </div>
                     </div>
                 </section>
@@ -56,9 +59,11 @@
                             </p>
 
                             <div class="home__buttons">
-                                <a href="#" class="button">Book Now</a>
-                                <a href="#" class="button--link button--flex">Track Record <i
-                                        class='bx bx-right-arrow-alt button__icon'></i></a>
+                                <button href="#" class="button update-cart" data-product=12 data-action="add">Add to
+                                    Cart
+                                    now</button>
+                                <a href="#" class="button--link button--flex ">Track
+                                    Record <i class='bx bx-right-arrow-alt button__icon'></i></a>
                             </div>
                         </div>
                     </div>
@@ -86,7 +91,9 @@
                             </p>
 
                             <div class="home__buttons">
-                                <a href="#" class="button">Book Now</a>
+                                <button href="#" class="button update-cart" data-product=11 data-action="add">Add to
+                                    Cart
+                                    now</button>
                                 <a href="#" class="button--link button--flex">Track Record <i
                                         class='bx bx-right-arrow-alt button__icon'></i></a>
                             </div>
@@ -151,8 +158,8 @@
                 <h3 class="trick__title">{{product.name}}</h3>
                 <span class="trick__subtitle">{{product.description}}</span>
                 <span class="trick__price">${{product.price}}</span>
-                <button class="button trick__button">
-                    <i class='bx bx-cart-alt trick__icon'></i>
+                <button class="button trick__button update-cart" data-product={{product.id}} data-action="add">
+                    <i class='bx bxs-cart-add bx-tada trick__icon bx-sm' style='color:#fff'></i>
                 </button>
         </div>
         {% endif %}
@@ -191,8 +198,8 @@
                             <span class="new__discount">$29.99</span>
                         </div>
 
-                        <button class="button new__button">
-                            <i class='bx bx-cart-alt new__icon'></i>
+                        <button class="button new__button update-cart" data-product={{product.id}} data-action="add">
+                            <i class='bx bxs-cart-add bx-tada new__icon bx-sm' style='color:#fff'></i>
                         </button>
                 </div>
                 {% endif %}
