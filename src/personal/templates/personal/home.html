@@ -153,7 +153,8 @@
 
         <div class="trick__container container grid">
             {% for product in products %}
-            {% if product.id >= 1 and product.id <= 7 %} <div class="trick__content">
+            {% if product.id >= 1 and product.id != 13 and product.id != 14 and product.id != 15 %} <div
+                class="trick__content">
                 <img src="{{product.image.url}}" alt="" class="trick__img">
                 <h3 class="trick__title">{{product.name}}</h3>
                 <span class="trick__subtitle">{{product.description}}</span>
@@ -161,9 +162,9 @@
                 <button class="button trick__button update-cart" data-product={{product.id}} data-action="add">
                     <i class='bx bxs-cart-add bx-tada trick__icon bx-sm' style='color:#fff'></i>
                 </button>
-        </div>
-        {% endif %}
-        {% endfor %}
+            </div>
+            {% endif %}
+            {% endfor %}
         </div>
     </section>
 
@@ -187,7 +188,8 @@
             <div class="swiper new-swiper">
                 <div class="swiper-wrapper">
                     {% for product in products %}
-                    {% if product.id > 7 and product.id < 13%} <div class="new__content swiper-slide">
+                    {% if product.id > 7 and product.id != 13 and product.id != 14 and product.id != 15 %} <div
+                        class="new__content swiper-slide">
                         <div class="new__tag">New</div>
                         <img src="{{product.image.url}}" alt="" class="new__img">
                         <h3 class="new__title">{{product.name}}</h3>
@@ -201,11 +203,11 @@
                         <button class="button new__button update-cart" data-product={{product.id}} data-action="add">
                             <i class='bx bxs-cart-add bx-tada new__icon bx-sm' style='color:#fff'></i>
                         </button>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
                 </div>
-                {% endif %}
-                {% endfor %}
             </div>
-        </div>
         </div>
     </section>
 
