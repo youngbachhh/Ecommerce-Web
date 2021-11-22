@@ -34,7 +34,35 @@
     {% include 'personal/home.html' %}
     <!--==================== HOME END ====================-->
 
+    <div id="order">
 
+        <form action="" style="margin-top: 100px; margin-bottom: 2rem;">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 100px">Product</th>
+                        <th style="width: 300px">Name</th>
+                        <th style="width: 100px">Quantity</th>
+                        <th style="width: 180px">Price</th>
+                        <th style="width: 180px">Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total" style="margin-left: 740px; margin-top: 80px">
+                <p style="display: inline; font-size: 20px;">Total: </p>
+                <p id="money" style="display: inline; font-size: 20px;"> 0 </p>
+            </div>
+
+        </form>
+    </div>
     <!--==================== FOOTER ====================-->
     {% include 'personal/footer.html' %}
     <!--==================== FOOTER END ====================-->
@@ -50,6 +78,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="{% static 'js/main.js' %}"></script>
+    <script src="{% static 'js/order.js' %}"></script>
 </body>
 
 </html>

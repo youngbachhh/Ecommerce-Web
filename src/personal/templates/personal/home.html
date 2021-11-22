@@ -29,8 +29,8 @@
                                 <button href="#" class="button update-cart" data-product=13 data-action="add">Add to
                                     Cart
                                     now</button>
-                                <a href="#" class="button--link button--flex">Track Record <i
-                                        class='bx bx-right-arrow-alt button__icon'></i></a>
+                                <a href="#" class="button--link button--flex">Track Record
+                                    <i class='bx bx-right-arrow-alt button__icon'></i></a>
                             </div>
 
                         </div>
@@ -94,8 +94,8 @@
                                 <button href="#" class="button update-cart" data-product=11 data-action="add">Add to
                                     Cart
                                     now</button>
-                                <a href="#" class="button--link button--flex">Track Record <i
-                                        class='bx bx-right-arrow-alt button__icon'></i></a>
+                                <a href="#" class="button--link button--flex">Track Record
+                                    <i class='bx bx-right-arrow-alt button__icon'></i></a>
                             </div>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
 
         <div class="trick__container container grid">
             {% for product in products %}
-            {% if product.id >= 1 and product.id != 13 and product.id != 14 and product.id != 15 %} <div
+            {% if product.id > 1 and product.id != 13 and product.id != 14 and product.id != 15 %} <div
                 class="trick__content">
                 <img src="{{product.image.url}}" alt="" class="trick__img">
                 <h3 class="trick__title">{{product.name}}</h3>
@@ -227,4 +227,7 @@
             </form>
         </div>
     </section>
+
+
+
 </main>
