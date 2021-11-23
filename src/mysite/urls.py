@@ -25,6 +25,7 @@ from account.views import (
     registration_view,
     logout_view,
     login_view,
+    purchase_view,
 )
 
 
@@ -34,7 +35,7 @@ urlpatterns = [
     path('register/', registration_view, name='register'),
     path('login/', login_view, name='login'),
     path('logout/', logout_view, name='logout'),
-
+    path('purchase/', purchase_view, name='purchase'),
     path('password_reset/', auth_views.PasswordResetView.as_view(template_name='registration/password_reset_form.html'),
          name='password_reset'),
     path('password_reset/done/', auth_views.PasswordResetCompleteView.as_view(template_name='registration/password_reset_done.html'),

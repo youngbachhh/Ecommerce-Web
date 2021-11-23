@@ -1,0 +1,31 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=" {% static 'css/purchase.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon">
+    <title>We are on the way</title>
+</head>
+<body>
+
+    <section>
+        <div class="clouds">
+            <img src= "{% static 'img/cloud1.jpg' %}" alt="" style="--i:1;">
+            <img src= "{% static 'img/cloud1.png' %}" alt="" style="--i:2;">
+            <img src= "{% static 'img/cloud1.jpg' %}" alt="" style="--i:3;">
+        </div>
+        <div class="clouds clouds2">
+            <img src= "{% static 'img/cloud2.png' %}" alt="" style="--i:1;">
+            <img src= "{% static 'img/cloud2.png' %}" alt="" style="--i:2;">
+            <img src= "{% static 'img/cloud2.png' %}" alt="" style="--i:3;">
+        </div>
+        <div class="runway"></div>
+        <img src= "{% static 'img/plane.png' %}" alt="" class = "plane">
+    </section>
+</body>
+</html>

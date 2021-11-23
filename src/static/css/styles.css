@@ -127,9 +127,32 @@ button {
   font-size: var(--normal-font-size);
 }
 
+#purchase {
+  margin-left: 600px;
+  display: flex;
+  height: 30px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  background: #a31839;
+  padding: var(--mb-2-5) var(--mb-2-5);
+  border-radius: var(--mb-2-5);
+  margin-top: var(--mb-2-5);
+}
 
+#purchase a {
+  color: var(--text-color);
+  text-decoration: none;
+}
 
+#purcahse a:hover {
+  color: var(--text-color-light);
+  text-decoration: none;
+}
 
+#purchase:hover {
+  background: #ba042f;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
@@ -642,15 +665,18 @@ button {
   justify-content: center;
   margin: auto;
   margin-top: 50px;
-  background: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);;
-  color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);;
+  background: linear-gradient(
+    90deg,
+    hsl(360, 28%, 40%) 0%,
+    hsl(18, 28%, 40%) 100%
+  );
+  color: linear-gradient(90deg, hsl(360, 28%, 40%) 0%, hsl(18, 28%, 40%) 100%);
   font-weight: var(--font-medium);
   font-size: var(--normal-font-size);
   width: 80vw;
   min-height: 100vh;
   flex-direction: row;
 }
-
 
 .row {
   display: flex;
@@ -680,7 +706,6 @@ button {
   background-repeat: no-repeat;
 }
 
-
 .col-name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
@@ -700,12 +725,7 @@ button {
 .col-remove {
   width: 150px;
   height: 100px;
-
 }
-
-
-
-
 
 /*=============== FOOTER ===============*/
 .footer {

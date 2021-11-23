@@ -9,3 +9,7 @@ def home(request):
     context = {}
     context['products'] = products
     return render(request, 'base.html', context)
+
+
+# def purchase(request):
+#     return render(request, 'purchase.html')
