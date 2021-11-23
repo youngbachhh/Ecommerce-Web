@@ -181,10 +181,10 @@ function addToCart(product) {
             <td style="width: 100px; text-align: center; ">
                 <span class="add">${product.quantity}</span>
             </td>
-            <td style="width: 180px; text-align: center; ">
+            <td style="width: 2000px; text-align: center; ">
                 <span>$${product.price}</span>
             </td>
-            <td style="width: 180px; text-align: center;">
+            <td style="width: 100px; text-align: center;">
                 <button class="remove"
                 style="background-color: transparent; color: #99061b">
                     <i class='bx bx-trash bx-sm bx-spin'></i>
