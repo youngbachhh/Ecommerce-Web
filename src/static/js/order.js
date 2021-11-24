@@ -170,7 +170,7 @@ function addToCart(product) {
     const cartItem = document.createElement("tr");
     cartItem.classList.add('cart-item');
     cartItem.innerHTML = `
-        <tr style="font-family: Poppins">
+        <tr>
             <td style="width: 100px; justify-content: center;
             align-items: center;">
                 <img src="${product.img}">
@@ -181,7 +181,7 @@ function addToCart(product) {
             <td style="width: 100px; text-align: center; ">
                 <span class="add">${product.quantity}</span>
             </td>
-            <td style="width: 2000px; text-align: center; ">
+            <td style="width: 200px; text-align: center; ">
                 <span>$${product.price}</span>
             </td>
             <td style="width: 100px; text-align: center;">
@@ -196,6 +196,7 @@ function addToCart(product) {
 
     cart.appendChild(cartItem);
     cartItem.querySelector('.remove').addEventListener('click', removeCartItem);
+    updateCartTotal();
 
 }
 
@@ -220,10 +221,10 @@ function updateCart() {
                 <td style="width: 100px; text-align: center; ">
                     <span class="add">${item.quantity}</span>
                 </td>
-                <td style="width: 180px; text-align: center; ">
+                <td style="width: 200px; text-align: center; ">
                     <span>$${price}</span>
                 </td>
-                <td style="width: 180px; text-align: center;">
+                <td style="width: 100px; text-align: center;">
                     <button class="remove" style="background-color: transparent; color: #99061b">
                         <i class='bx bx-trash bx-sm bx-spin'></i>
                     </button>
@@ -235,16 +236,14 @@ function updateCart() {
         cart.appendChild(cartItem);
         cartItem.querySelector('.remove').addEventListener('click', removeCartItem);
         updateCartTotal();
-
-
     }
 }
 
 function removeCartItem(event) {
     const buttonClicked = event.target;
-    buttonClicked.parentElement.parentElement.remove();
+    buttonClicked.parentElement.parentElement.parentElement.remove();
     for (let item of cartList) {
-        if (item.name == buttonClicked.parentElement.parentElement.querySelector('h4').innerText) {
+        if (item.name == buttonClicked.parentElement.parentElement.parentElement.querySelector('h4').innerText) {
             cartList.splice(cartList.indexOf(item), 1);
         }
     }
@@ -253,7 +252,7 @@ function removeCartItem(event) {
 
 
 function updateCartTotal() {
-    console.log(1);
+
     const cart = document.querySelector("tbody");
     const cartItems = cart.querySelectorAll('.cart-item');
     const total = document.getElementById('money');
