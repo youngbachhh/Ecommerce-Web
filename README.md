@@ -1,8 +1,9 @@
 # Bài tập lớn Python PTIT
 
-pip install -r requirements.txt
-python manage.py runserver
+pip install -r requirements.txt <br> 
+python manage.py runserver <br>
+<br>
 
-superuser:
-email: youngbach@gmail.com
-password: youngbach
+superuser <br>
+email: youngbach@gmail.com <br>
+password: youngbach <br>
